@@ -11,6 +11,7 @@ name = "pypi"
 pytest = "*"
 pytest-cov = "*"
 coverage = "*"
+"autopep8" = "*"
 
 
 [packages]
