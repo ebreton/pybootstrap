@@ -1,18 +1,34 @@
-.PHONY:test dev
+#!make
+# Default values, can be overridden either on the command line of make
+# or in .env
 
-export .env
+.PHONY: init vars test coverage
 
-dev:
+vars:
+	@echo 'Environment-related vars:'
+	@echo '  PYTHONPATH=${PYTHONPATH}'
+
+init:
+ifeq ($(wildcard .env),)
+	cp .env.sample .env
+	echo PYTHONPATH=`pwd`/src >> .env
+endif
+	pipenv --update 
+	pipenv update --dev --python 3
+
+test: check-env
 	flake8 src --max-line-length=120
-	pytest --cov=. -x test
+	pytest --cov=src test
 
-test:
-	flake8 src --max-line-length=120
-	pytest --cov=. test
+coverage: test
 	coverage html
 	open htmlcov/index.html
 
-venv:
-	echo PYTHONPATH=`pwd`/src > .env
-	pipenv --update 
-	pipenv update --dev --python 3
+check-env:
+ifeq ($(wildcard .env),)
+	@echo "Please create your .env file first, from .env.sample or by running make venv"
+	@exit 1
+else
+include .env
+export
+endif
