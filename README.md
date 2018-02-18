@@ -25,11 +25,11 @@
 </p>
 <br>
 
-## Looking for something fatter ?
+### Looking for something fatter ?
 
 Like a bootstrap for a web application ? Check [Flask Bootstrap](https://github.com/ebreton/flaskbootstrap)...
 
-## Main Features
+### Main Features
 
 - **Dev friendly**: a Makefile will allow to quickly setup everything with `make init`, and also to run tests, see coverage and display your environment vars
 - **Configuration through environement variables** in a `.env` file (only for PYTHONPATH in this bootstrap)
@@ -40,9 +40,9 @@ Like a bootstrap for a web application ? Check [Flask Bootstrap](https://github.
 - **Out-of-the-box CLI** thanks to `docopt`
 - **Loaded with bonuses**, available through an utils package to take care of logging, env vars, loading of csv and yaml, running commands
 
-## A note on bonuses 
+### A note on bonuses 
 
-### Utils & tests
+#### Utils & tests
 
 A few helpers are included in this repo, more for illustration than anything else, a bit for (my) conveniency also...
 
@@ -50,19 +50,19 @@ A few tests come along with them, only to make the scaffolder more readable, and
 
 It's up to you to raise the coverage ratio, or not. And to trash what you will not use.
 
-### Something is missing ?
+#### Something is missing ?
 
 Head to [githup issues](https://github.com/ebreton/flaskbootstrap/issues) and submit one ! Be sure to have a look at the [CONTRIBUTING.md](./docs/CONTRIBUTING.md) guide before
 
-## Install and Usage
+### Install and Usage
 
 Check out [INSTALL.md](./docs/INSTALL.md) for more details
 
-## Changelog
+### Changelog
 
 All notable changes to this project are documented in [CHANGELOG.md](./docs/CHANGELOG.md).
 
-## Contribution
+### Contribution
 
 Check out [CONTRIBUTING.md](./docs/CONTRIBUTING.md) for more details
 
