@@ -1,7 +1,7 @@
 import os
 
 
-VERSION = "0.1.0"
+VERSION = "0.1.1"
 
 ROOT_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 SRC_PATH = os.path.join(ROOT_PATH, 'src')
