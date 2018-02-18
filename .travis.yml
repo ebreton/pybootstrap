@@ -1,0 +1,18 @@
+---
+language: python
+
+python:
+- 3.6
+
+env:
+  global:
+    - PIPENV_VENV_IN_PROJECT=1
+    - PIPENV_IGNORE_VIRTUALENVS=1
+
+install:
+- pip install pipenv
+- make init
+
+script:
+- pipenv run make test
+- pipenv run codecov

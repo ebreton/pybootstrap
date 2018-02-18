@@ -1,7 +1,6 @@
 // Placez vos paramètres dans ce fichier pour remplacer les paramètres par défaut
 {
-    "window.zoomLevel": 0,
-
+    "window.zoomLevel": 1,
     "editor.formatOnPaste": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
@@ -12,7 +11,6 @@
         100,
         120
     ],
-
     "files.autoSave": "onWindowChange",
     "files.exclude": {
         "**/.git": true,
@@ -24,21 +22,18 @@
         "**/*.pyc": true
     },
     "files.insertFinalNewline": true,
-
     "git.confirmSync": false,
     "git.enableSmartCommit": true,
     "git.autofetch": true,
-
-    "emmet.includeLanguages": {"vue-html": "html"},
+    "emmet.includeLanguages": {
+        "vue-html": "html"
+    },
     "emmet.excludeLanguages": [],
-    
     "restructuredtext.builtDocumentationPath": "${workspaceRoot}/docs/_build/html",
     "restructuredtext.confPath": "${workspaceRoot}/docs",
     "restructuredtext.linter.run": "onSave",
-
     "python.venvPath": "/Users/emb/Documents/virtualenvs, /Users/emb/.virtualenvs",
-    "python.pythonPath": "",
-
+    "python.pythonPath": "/usr/local/bin/python3",
     "python.unitTest.pyTestEnabled": true,
     "python.formatting.autopep8Args": [
         "--max-line-length 120"
@@ -48,15 +43,13 @@
     "python.linting.flake8Args": [
         "--max-line-length=120"
     ],
-
     "sublimeTextKeymap.promptV3Features": true,
-
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-
     "markdownlint.config": {
         "MD003": false,
         "MD007": false,
         "MD013": false
-    }
+    },
+    "extensions.ignoreRecommendations": false
 }
