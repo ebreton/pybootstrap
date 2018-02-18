@@ -18,10 +18,6 @@
     <img src="https://travis-ci.org/ebreton/pybootstrap.svg?branch=master"
          alt="Travis">
   </a>
-  <a href="https://codecov.io/gh/ebreton/pybootstrap">
-    <img src="https://codecov.io/gh/ebreton/pybootstrap/branch/master/graph/badge.svg"
-         alt="Codecov" />
-  </a>
   <a href="https://github.com/ebreton/pybootstrap/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-blue.svg"
          alt="License" />
