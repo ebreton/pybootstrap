@@ -25,6 +25,10 @@
 </p>
 <br>
 
+## Looking for something fatter ?
+
+Like a bootstrap for a web application ? Check [Flask Bootstrap](https://github.com/ebreton/flaskbootstrap)...
+
 ## Main Features
 
 - **Dev friendly**: a Makefile will allow to quickly setup everything with `make init`, and also to run tests, see coverage and display your environment vars
