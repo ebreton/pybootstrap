@@ -22,7 +22,7 @@ from settings import VERSION
 
 
 @dispatch.on('hello')
-def do_list(name=None, **kwargs):
+def do_hello(name=None, **kwargs):
     print("Hello, {}!". format(name))
 
 
