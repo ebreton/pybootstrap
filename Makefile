@@ -33,7 +33,7 @@ version:
 	@echo CHANGELOG GENERATOR:
 	@docker run -it --rm \
 		-v "$(pwd)":/usr/local/src/your-app \
-		ferrarimarco/github-changelog-generator \
+		ferrarimarco/github-changelog-generator:1.14.3 \
 		--version
 	@echo ''
 	@echo APPLICATION: 
@@ -72,7 +72,7 @@ build:
 	cd bin && docker build -t python-requests .
 
 pull: build
-	docker pull ferrarimarco/github-changelog-generator
+	docker pull ferrarimarco/github-changelog-generator:1.14.3
 
 ps:
 	# A lightly formatted version of docker ps
@@ -82,7 +82,7 @@ changelog: check-env
 	@echo updating CHANGELOG...
 	@docker run -it --rm \
 		-v $(PWD):/usr/local/src/your-app \
-		ferrarimarco/github-changelog-generator \
+		ferrarimarco/github-changelog-generator:1.14.3 \
 		-u ${GITHUB_OWNER} -p ${GITHUB_REPO} -t ${CHANGELOG_GITHUB_TOKEN}
 
 	# update versions
