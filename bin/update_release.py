@@ -118,7 +118,7 @@ _version = '{1}'
 _build = '{2}'""".format(release, version, build)
         output.write(content)
 
-
+# pylint:disable=E0602
 try: input = raw_input
 except: pass
 
@@ -137,7 +137,7 @@ def confirm_push():
             ["git", "rev-parse", "--abbrev-ref", "HEAD"], cwd=BASE_DIR).decode('utf-8').strip()
         print("\nYou are on branch '{}'".format(branch))
         print("on version        '{}'".format(_version))
-        print("\nType [y] to comfirm push".format(branch))
+        print("\nType [y] to comfirm push")
         answer = input("or any other key to abort:").lower()
         if answer != "y":
             raise SystemExit("Push aborted...")
