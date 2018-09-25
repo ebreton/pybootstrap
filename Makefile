@@ -54,7 +54,7 @@ vars: check-env
 	@echo '  GITHUB_OWNER=${GITHUB_OWNER}'
 	@echo '  GITHUB_REPO=${GITHUB_REPO}'
 	@echo '  GITHUB_USER=${GITHUB_USER}'
-	@echo '  GITHUB_TOKEN=${GITHUB_TOKEN}'
+	@echo '  GITHUB_KEY=${GITHUB_KEY}'
 	@echo '  CHANGELOG_GITHUB_TOKEN=${CHANGELOG_GITHUB_TOKEN}'
 
 check-env:
