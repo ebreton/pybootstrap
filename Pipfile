@@ -1,21 +1,18 @@
 [[source]]
-
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 name = "pypi"
 
-
 [dev-packages]
-
 "flake8" = "*"
 pytest = "*"
 pytest-cov = "*"
 coverage = "*"
 "autopep8" = "*"
 codecov = "*"
-
+pylint = "*"
 
 [packages]
-
 docopt-dispatch = "*"
 pyyaml = "*"
+requests = "*"
