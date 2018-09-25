@@ -14,11 +14,10 @@ VERSION:=$(shell \
 		python-requests update_release.py -v)
 
 
-init: login pull
+init:
 ifeq ($(wildcard .env),)
 	cp .env.sample .env
 	echo PYTHONPATH=`pwd`/src >> .env
-	pipenv install --dev --python 3
 endif
 	pipenv update 
 
