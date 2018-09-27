@@ -76,7 +76,7 @@ pull: build
 
 ps:
 	# A lightly formatted version of docker ps
-	docker ps --format 'table {{.Names}}\t{{.Image}}\t{{.Status}} ago'
+	docker ps --format 'table {{.Image}}\t{{.Status}}\t{{.Ports}}\t{{.Names}}'
 
 changelog: check-env
 	@echo updating CHANGELOG...
