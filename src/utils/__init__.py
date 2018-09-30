@@ -4,16 +4,23 @@ from .runner import import_class_from_string, run_command
 from .maintenance import deprecated
 from .csv import csv_filepath_to_dict, csv_string_to_dict
 from .yaml import yaml_file_to_dict
+from .dates import parse_date, build_time_range, UTC, \
+    datetime_to_milliseconds, datetime_to_seconds
 
 
 __all__ = [
-    get_mandatory_env,
-    get_optional_env,
-    set_logging_config,
-    import_class_from_string,
-    run_command,
-    deprecated,
-    csv_filepath_to_dict,
-    csv_string_to_dict,
-    yaml_file_to_dict,
+    'get_mandatory_env',
+    'get_optional_env',
+    'set_logging_config',
+    'import_class_from_string',
+    'run_command',
+    'deprecated',
+    'csv_filepath_to_dict',
+    'csv_string_to_dict',
+    'yaml_file_to_dict',
+    'parse_date',
+    'build_time_range',
+    'UTC',
+    'datetime_to_milliseconds',
+    'datetime_to_seconds',
 ]
