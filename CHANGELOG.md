@@ -1,7 +1,10 @@
 # Change Log
 
-## [qa-release](https://github.com/ebreton/pybootstrap/tree/qa-release) (2018-09-25)
-[Full Changelog](https://github.com/ebreton/pybootstrap/compare/0.2.0...qa-release)
+## [qa-release](https://github.com/ebreton/pybootstrap/tree/qa-release) (2018-09-30)
+[Full Changelog](https://github.com/ebreton/pybootstrap/compare/0.2.1...qa-release)
+
+## [0.2.1](https://github.com/ebreton/pybootstrap/tree/0.2.1) (2018-09-30)
+[Full Changelog](https://github.com/ebreton/pybootstrap/compare/0.2.0...0.2.1)
 
 ## [0.2.0](https://github.com/ebreton/pybootstrap/tree/0.2.0) (2018-09-25)
 [Full Changelog](https://github.com/ebreton/pybootstrap/compare/0.1.1...0.2.0)
